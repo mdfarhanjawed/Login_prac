@@ -1,0 +1,23 @@
+<div>
+	<%= form_for @user do |f| %>
+		<div>
+			<%= f.label :firstname, "Username:" %>
+			<%= f.text_field :firstname %>
+		</div>
+		<div>
+			<%= f.label :lastname, "Lastname:" %>
+			<%= f.text_field :lastname %>
+		</div>
+		<div>
+			<%= f.label :email, "Email:" %>
+			<%= f.text_field :email %>
+		</div>
+		<div>
+			<%= f.label :password, "Password:" %>
+			<%= f.password_field :password %>
+		</div>			
+		<div>
+			<%= f.submit "Signup" %>
+		</div>
+	<% end %>
+</div>

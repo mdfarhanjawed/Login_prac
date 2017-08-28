@@ -1,0 +1,7 @@
+<ul>
+	<% if @user.errors.any? %>
+		<% @user.errors.each do |attribute,msg| %>
+			<li><%= "#{attribute} #{msg}" %></li>
+		<% end %>
+	<% end %>
+</ul>

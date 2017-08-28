@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LoginPrac</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <div>
+    <div class="">
+      <ul class="nav nav-tabs">
+        <li><%= link_to 'login', login_path %></li>
+        <li><%= link_to 'login', login_path %></li>
+        <li><%= link_to 'login', login_path %></li>
+        <li><%= link_to 'login', login_path %></li>
+      </ul>
+      <%= yield %>
+    <div id="notice"></div>
+  </div>
+    </div> 
+
+  </body>
+</html>
