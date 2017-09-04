@@ -7,4 +7,6 @@ Rails.application.routes.draw do
  post 'login', to: 'sessions#create'
  delete 'logout', to: 'sessions#delete'
 
+ get 'search', to: 'stocks#search'
+
 end
