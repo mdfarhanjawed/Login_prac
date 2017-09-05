@@ -8,5 +8,6 @@ Rails.application.routes.draw do
  delete 'logout', to: 'sessions#delete'
 
  get 'search', to: 'stocks#search'
+ get 'portfolio', to: 'users#portfolio'
 
 end

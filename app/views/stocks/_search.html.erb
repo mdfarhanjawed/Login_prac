@@ -1,0 +1,22 @@
+<div id="main-block">
+	<h1 class="text-center">Stock Search</h1>
+
+	<div class="row-md-12 form-group no-padding text-center">
+		<div class="column-md-10">
+			<%= form_tag search_path, method: :get, remote: true, id: 'stock-search' do %>
+				<%= text_field_tag :search %>
+				<%= submit_tag "Search", class: "btn btn-primary" %>
+			<% end %>
+		</div>
+	</div>
+
+	
+	<% if @stock.present? %>
+		<div id="result" class="well results-block">
+			<strong>Stock Name</strong> <%= @stock.name %> 
+			<strong>Stock Ticker</strong> <%= @stock.ticker%> 
+			<strong>Stock Last Price</strong> <%= @stock.last_price %> 
+		</div>
+	<% end %>
+	<div id="error-form"></div>
+</div>	
